@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Sign-up form start -->
+  <main>
+    <div class="co">
+      <h1>Stay updated!</h1>
+      <br>
+      <p>Join 60,000+ product managers receiving monthly</p>
+      <p>updates on:</p>
+      <br>
+      <p><img src="/assets/images/icon-list.svg" class="icon"></i> Product discovery and building what matters</p>
+      <br>
+      <p><img src="/assets/images/icon-list.svg" class="icon"> Measuring to ensure updates are a success</p>
+      <br>
+      <p><img src="/assets/images/icon-list.svg" class="icon"> And much more!</p>
+      <br>
+      <br>
+
+      <form action="mailto:endplay_xp@hotmail.com" method="post" enctype="text/plain">
+        <label for="name"><b>Email address:</b></label>
+        <input id="name" type="email" pattern="[a-z0-9]{8,}" placeholder="email@company.com" required minlength="4" maxlength="13">
+
+        <button type="button" onclick="showMainDiv()"><b>Subscribe to monthly newsletter</b></button>
+      </form>
+    </div>
+    <picture>
+      <source media="(max-width: 450px)" srcset="/assets/images/illustration-sign-up-mobile.svg">
+      <img src="/assets/images/illustration-sign-up-desktop.svg" alt="">
+    </picture>
+  </main>
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+  <div class="main">
+    <div class="as">
+      <img src="/assets/images/icon-list.svg" class="icon">
+      <br> <br> <br>
+      <h1>Thanks for subscribing!</h1>
+      <br>
+      <b>
+        <p>A confirmation email has been sent to</p>
+        <p><a id='asdf'>ash@loremcompany.com.</a> Please open it and </p>
+        <p> click the button inside to confirm your subscription.</p>
+      </b>
+      <br><br>
+      <button type="button" onclick="window.location.href = 'http://127.0.0.1:5500/index.html';"><b>Dismiss
+          message</b></button>
+    </div>
+  </div>
+  <!-- Success message end -->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Hasan</a>.
+  </div>
+</body>
+
+<script src="script.js"></script>
+
+</html>

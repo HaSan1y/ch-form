@@ -1,4 +1,4 @@
-let x,y;
+let email, y;
 
 function validateEmail(email) {
   console.log("s");
@@ -6,16 +6,15 @@ function validateEmail(email) {
   return re.test(email);
 }
 
-
 function showMainDiv() {
   email = document.getElementById("name").value;
   if (!validateEmail(email)) {
     alert("Invalid email address!");
     return false;
   } else {
-    x = document.getElementById("name").value;
+    email = document.getElementById("name").value;
     y = document.getElementById("asdf");
-    y.innerText = x;
+    y.innerText = email;
 
     document.querySelector(".main").style.display = "block";
     document.querySelector("main").style.display = "none";

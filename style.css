@@ -52,7 +52,7 @@ main,
 
 .main {
     grid-template-columns: 1fr;
-    height: 400px;
+    height: 420px;
     display: none;
 }
 

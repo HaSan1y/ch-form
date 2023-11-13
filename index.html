@@ -13,7 +13,7 @@
 
   <!-- Sign-up form start -->
   <main>
-    <div class="co">
+    <section>
       <h1>Stay updated!</h1>
       <br>
       <p>Join 60,000+ product managers receiving monthly</p>
@@ -31,11 +31,11 @@
       <form action="https://formspree.io/f/mnqkobzd" method="post" enctype="text/plain">
         <label for="name"><b>Email address:</b></label>
         <input id="name" name="Email" type="email" pattern="[a-z0-9]{8,}" placeholder="email@company.com" required
-          minlength="5" maxlength="17">
+          minlength="5" maxlength="20">
 
         <button type="submit" onclick="showMainDiv()"><b>Subscribe to monthly newsletter</b></button>
       </form>
-    </div>
+    </section>
     <picture>
       <source media="(max-width: 600px)" srcset="/assets/images/illustration-sign-up-mobile.svg">
       <img src="/assets/images/illustration-sign-up-desktop.svg" alt="">
@@ -45,7 +45,7 @@
 
   <!-- Success message start -->
   <div class="main">
-    <div class="as">
+    <section>
       <img src="/assets/images/icon-list.svg" class="icon">
       <br> <br> <br>
       <h1>Thanks for subscribing!</h1>
@@ -58,7 +58,7 @@
       <br><br>
       <button type="button" onclick="location.reload();"><b>Dismiss
           message</b></button>
-    </div>
+    </section>
   </div>
   <!-- Success message end -->
 

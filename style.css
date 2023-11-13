@@ -1,8 +1,11 @@
-* {
+*,
+::before,
+::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     line-height: 1.2;
+    overflow: hidden;
 }
 
 @font-face {
@@ -78,7 +81,9 @@ button {
 }
 
 button:hover {
-    background-color: rgb(255, 123, 0);
+    background: linear-gradient(90deg,
+            rgba(255, 83, 123, 1) 0%,
+            rgba(255, 105, 59, 1) 100%);
 }
 
 main img {
@@ -94,7 +99,7 @@ main p img {
     height: 18px;
 }
 
-.as img {
+.main section img {
     height: 50px;
 }
 
@@ -102,17 +107,13 @@ p {
     color: rgb(6, 6, 90);
 }
 
-.as {
-    overflow: hidden;
-}
 
 picture {
     height: 500px;
 }
 
 .attribution {
-    float: right;
-    margin-top: 5px;
+    margin-top: 10px;
     display: flex;
     color: white;
 }
@@ -133,7 +134,7 @@ picture {
         position: absolute;
         right: 0;
         top: -50px;
-        border-radius: 20px;
+        border-radius: 10px;
         height: auto;
         width: 540px;
     }
@@ -146,7 +147,7 @@ picture {
     }
 
     .main {
-        margin: 0 0 0 0;
+        margin: 0 0 0 30px;
         height: 850px;
         width: 570px;
     }
@@ -183,7 +184,7 @@ picture {
         position: absolute;
         left: -40px;
         top: -10px;
-        border-radius: 20px;
+        border-radius: 10px;
         width: 460px;
     }
 

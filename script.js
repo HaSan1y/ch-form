@@ -1,7 +1,6 @@
 let email, y;
 
 function validateEmail(email) {
-  console.log("s");
   var re = /^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$/;
   return re.test(email);
 }
@@ -13,8 +12,7 @@ function showMainDiv() {
     return false;
   } else {
     email = document.getElementById("name").value;
-    y = document.getElementById("asdf");
-    y.innerText = email;
+    y = document.getElementById("asdf").innerText = email;
 
     document.querySelector(".main").style.display = "block";
     document.querySelector("main").style.display = "none";
